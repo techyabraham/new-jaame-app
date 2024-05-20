@@ -22,10 +22,10 @@ class Themes {
     _saveThemeToBox(!_loadThemeFromBox());
   }
 
-  static final light = ThemeData.light().copyWith(
+ static final light = ThemeData.light().copyWith(
   useMaterial3: true,
   primaryColor: CustomColor.primaryLightColor,
-  backgroundColor: CustomColor.primaryBGLightColor, // Use backgroundColor for the entire app
+  scaffoldBackgroundColor: CustomColor.primaryBGLightColor, // Use scaffoldBackgroundColor instead
   brightness: Brightness.light,
   textTheme: ThemeData.dark().textTheme.apply(
     // bodyColor: Colors.white,
