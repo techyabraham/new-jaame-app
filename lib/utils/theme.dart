@@ -24,17 +24,19 @@ class Themes {
 
  static final light = ThemeData.light().copyWith(
   useMaterial3: true,
-  primaryColor: CustomColor.primaryLightColor,
-  scaffoldBackgroundColor: CustomColor.primaryBGLightColor, // Use scaffoldBackgroundColor instead
-  brightness: Brightness.light,
-  textTheme: ThemeData.dark().textTheme.apply(
-    // bodyColor: Colors.white,
-    fontFamily: GoogleFonts.inter().fontFamily,
-  ),
-);
+    primaryColor: CustomColor.primaryLightColor,
+    backgroundColor: CustomColor.primaryBGLightColor,
+    scaffoldBackgroundColor: CustomColor.primaryLightScaffoldBackgroundColor,
+    brightness: Brightness.light,
+    textTheme: ThemeData.dark().textTheme.apply(
+          // bodyColor: Colors.white,
+          fontFamily: GoogleFonts.inter().fontFamily,
+        ),
+  );
   static final dark = ThemeData.dark().copyWith(
     useMaterial3: true,
     primaryColor: CustomColor.primaryDarkColor,
+    backgroundColor: CustomColor.primaryBGDarkColor,
     scaffoldBackgroundColor: CustomColor.primaryDarkScaffoldBackgroundColor,
     brightness: Brightness.dark,
     textTheme: ThemeData.dark().textTheme.apply(
